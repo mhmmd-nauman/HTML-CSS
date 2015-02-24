@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="dropdown.js" ></script>
+
+<style>
+	.bg-info{
+
+		text-align: center;
+		margin-top: 5px;
+		font-size: 16px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.btn-primary, .btn-danger, .btn-info, .btn-warning{
+		
+		margin: 50px;
+		margin-top: 20px;
+
+	}
+
+</style>
+
+</head>
+<body style="background-color:#666666;">
+	
+
+	
+		<div class="header" style="background-color:white;  margin-bottom:15px;">
+			<img src="header-trimmed.png" class="img-rounded" style="height:100px; width:200px; margin:10px; ">	
+		
+		<nav class="navbar navbar-default" role="navigation" >
+			<div class="navebar-header">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Contacts</a></li>
+					<li class="dropdown">
+            			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               				Websites 
+               				<b class="caret"></b>
+           				 </a>
+			            <ul class="dropdown-menu">
+			               <li><a href="#">1</a></li>
+			               <li><a href="#">2</a></li>
+			               <li><a href="#">3</a></li>
+			               <li class="divider"></li>
+			               <li><a href="#">4</a></li>
+			               <li class="divider"></li>
+			               <li><a href="#">5</a></li>
+			            </ul>
+        			</li>
+					<li><a href="#">Reports</a></li>
+					<li><a href="#">Admin</a></li>
+					<li><a href="#">Logout</a></li>
+				</ul>
+				
+			</div>
+		</nav>
+		</div>
+	<div class="container-fluid">	
+		<form class="form-inline" role="search" style="background-color:white;  border-radius:5px; padding:20px;">
+            <div class="container-fluid">
+	            <div class="form-group ">
+	                <input type="text" class="widthset form-control">
+	                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Search</button>
+	            </div>
+            </div>
+        </form>
+
+        <form class="form-inline" role="form" style="background-color:white; margin-top:15px; border-radius:5px;">
+        	<div class="container-fluid">	
+        		 <div class="form-group">
+			        <label for="relation">Top Sales Agent</label>
+			        <select  name="Category" id="relation" class="widthset form-control ">
+			          <option value="">Today</option>
+			          <option value="">option 1 </option>
+			          <option value="">option 2</option>
+			          <option value="">option 3 </option>
+			          <option value="">option 4 </option>
+			        </select>
+      			</div>	
+      			<p class="bg-info">No data available</p>
+        	</div>
+        </form>
+
+
+        <form class="form-inline" role="form"  style="background-color:white; margin-top:15px; border-radius:5px;">
+        	<div class="container-fluid" align="center">
+	        	<button type="button" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-shopping-cart"></span> Order Form</button>
+	        	<button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-credit-card"></span> View Orders </button>
+	        	<button type="button" class="btn btn-warning btn-lg"> View clients</button>
+	        	<button type="button" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-user"></span> Insert Clients</button>
+        	</div>
+        </form>
+
+	</div>
+</body>
+</html>
+
+
+
